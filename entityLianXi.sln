@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "entityLianXi", "entityLianXi\entityLianXi.csproj", "{826FFC87-A7DD-477C-B582-21850C613877}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "entityStudent", "entityStudent\entityStudent.csproj", "{81B93B2E-6B4D-41EA-9B04-0AB79FEC14A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{826FFC87-A7DD-477C-B582-21850C613877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{826FFC87-A7DD-477C-B582-21850C613877}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{826FFC87-A7DD-477C-B582-21850C613877}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{826FFC87-A7DD-477C-B582-21850C613877}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81B93B2E-6B4D-41EA-9B04-0AB79FEC14A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81B93B2E-6B4D-41EA-9B04-0AB79FEC14A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81B93B2E-6B4D-41EA-9B04-0AB79FEC14A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81B93B2E-6B4D-41EA-9B04-0AB79FEC14A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {99F5540E-6409-4706-98B1-3A858805E715}
+	EndGlobalSection
+EndGlobal

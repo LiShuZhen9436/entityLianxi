@@ -1,0 +1,24 @@
+﻿@model entityLianXi.Models.Product
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>update</title>
+</head>
+<body>
+    <div> 
+        <form action="/Home/UpdateProduct">
+            <table>
+                <tr><td>产品名称：</td><td><input type="text" name="PName" value="@Model.PName" /><input type="hidden" name="Pid" value="@Model.Pid"/></td></tr>
+                <tr><td>产品价格：</td><td><input type="text" name="Pice" value="@Model.Pice" /></td></tr>
+                <tr><td><input type="submit" value="提交" /></td></tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

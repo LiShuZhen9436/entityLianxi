@@ -1,0 +1,36 @@
+﻿@model List<entityLianXi.Models.Product>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        
+        <form action="/Home/search">
+            <table>
+                <tr><td>商品名称：</td><td><input type="text" name="PName" /></td> <td><input type="submit" value="提交" /></td></tr>
+            </table>
+            
+        </form>
+
+        <a href="/Home/AddView">添加</a>
+        <table>
+            <tr><td>价格</td>   <td>商品名</td>  <td>种类类别</td>  <td>编辑</td> </tr>
+            @foreach (var item in Model)
+            {
+                <tr><td>@item.Pice</td>  <td>@item.PName</td> <td>空</td>   <td><a href="/Home/Del/@item.Pid" onclick="return confirm('是否删除？')">删除</a></td>
+                <td><a href="/Home/update/@item.Pid">修改</a></td> </tr>
+
+            }
+</table>
+    </div>
+</body>
+</html>

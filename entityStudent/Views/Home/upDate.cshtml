@@ -1,0 +1,25 @@
+﻿@model entityStudent.Models.student
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>upDate</title>
+</head>
+<body>
+    <div> 
+        <form action="/Home/upDateStudent">
+            <table>
+                <tr><td>学生姓名：</td><td>@Html.TextBoxFor(s=>s.sName)</td></tr>
+                <tr><td>学生年龄：</td><td>@Html.TextBoxFor(s=>s.age)</td></tr>
+                <tr><td>所属班级：</td><td>@Html.DropDownList("Gid")</td></tr>
+            <tr><td><input type="submit" value="提交" /></td></tr>
+        </table>
+    </form>
+    </div>
+</body>
+</html>

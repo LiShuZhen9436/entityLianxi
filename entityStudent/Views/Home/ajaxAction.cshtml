@@ -1,0 +1,39 @@
+﻿@model IEnumerable<entityStudent.Models.student>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.wGrad.gName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.age)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.wGrad.gName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.age)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.sid }) |
+            @Html.ActionLink("Details", "Details", new { id=item.sid }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.sid })
+        </td>
+    </tr>
+}
+
+</table>

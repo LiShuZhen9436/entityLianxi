@@ -1,0 +1,28 @@
+﻿@model entityLianXi.Models.Product
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>twoIndexView</title>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</head>
+<body>
+    <div> 
+        <form action="/Home/twoIndexDetail">
+            <table>
+                <tr><td>商品名称：</td><td>@Html.TextBoxFor(p => p.PName) @Html.ValidationMessageFor(p => p.PName)</td></tr>
+                <tr><td>商品价格：</td><td>@Html.TextBoxFor(p => p.Pice) @Html.ValidationMessageFor(p => p.Pice)</td></tr>
+                <tr><td>商品简介：</td><td>@Html.TextBoxFor(p => p.Detail) @Html.ValidationMessageFor(p => p.Detail)</td></tr>
+                <tr><td><input type="submit" value="提交" /></td></tr>
+        </table>
+    </form>
+    </div>
+</body>
+</html>

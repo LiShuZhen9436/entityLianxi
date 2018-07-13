@@ -1,0 +1,25 @@
+﻿@model entityStudent.Models.student
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add</title>
+</head>
+<body>
+    <div> 
+        <form action="/Home/addStudent">
+            <table>
+                <tr><td>学生姓名：</td><td>@Html.TextBoxFor(s => s.sName) @Html.ValidationMessageFor(s => s.sName)</td></tr>
+                <tr><td>学生年龄：</td><td>@Html.TextBoxFor(s => s.age) @Html.ValidationMessageFor(s => s.age)</td></tr>
+                <tr><td>学生班级：</td><td>@Html.DropDownList("Gid")</td></tr>
+                <tr><td><input type="submit" value="添加" /></td></tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

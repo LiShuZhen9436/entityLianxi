@@ -1,0 +1,38 @@
+﻿@model List<entityStudent.Models.student>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <form action="/Home/Search">
+            <span>根据姓名查询：</span>
+            <input type="text" name="sName" />
+
+            <span>根据年龄查询：</span>
+            <input type="text" name="age" />
+
+            <input type="submit" value="提交" />
+
+        </form>
+
+       <a href="/Home/Add">添加</a>
+            <table>
+                <tr><td>学生姓名</td> <td>学生年龄</td> <td>年级</td> <td>操作</td></tr>
+
+                @foreach (var item in Model)
+            {
+                    <tr><td>@item.sName</td> <td>@item.age</td> <td>@item.wGrad.gName</td> <td><a href="/Home/Del/@item.sid" onclick="return confirm('是否删除？')">删除</a> <a href="/Home/upDate/@item.sid">修改</a></td></tr>
+                }
+
+            </table>
+    </div>
+</body>
+</html>
